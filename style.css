@@ -451,3 +451,10 @@ section li {
     align-items: center;
   }
 }
+.phone-number:before {
+  content: "010-****-****";
+}
+
+.phone-number:hover:before {
+  content: "010-7730-4966";
+}
