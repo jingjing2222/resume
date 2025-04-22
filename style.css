@@ -358,6 +358,7 @@ section li {
 
   .project {
     page-break-inside: avoid;
+    break-inside: avoid; 
   }
 
   .tech-item {
