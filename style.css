@@ -452,9 +452,11 @@ section li {
   }
 }
 .phone-number:before {
-  content: "010-****-****";
+  content: "****-****";
+  letter-spacing: 2px;
 }
 
 .phone-number:hover:before {
-  content: "010-7730-4966";
+  content: "7730-4966";
+  letter-spacing: 0px;
 }
