@@ -44,17 +44,6 @@
   padding: 0;
 }
 
-/* 두 컬럼 레이아웃 */
-.two-column {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.two-column section {
-  flex: 1;
-}
-
 body {
   font-family: "IBMPlexSansKR", sans-serif;
   line-height: 1.4;
