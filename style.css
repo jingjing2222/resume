@@ -449,3 +449,16 @@ section li {
   content: "7730-4966";
   letter-spacing: 0px;
 }
+
+.project .result{
+  color:#222222
+}
+
+.project .title{
+  font-size: 0.85rem;
+  color: #111111;
+}
+
+.experience-item ul{
+  margin-bottom: 0.8rem;
+}
