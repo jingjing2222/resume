@@ -424,7 +424,6 @@ section li {
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 5px;
   transition: color 0.2s;
 }
 
