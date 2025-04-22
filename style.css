@@ -235,6 +235,10 @@ section li {
   margin-top: 0.4rem;
 }
 
+.experience-item ul ul ul ul li {
+  margin-bottom: 0.2rem;
+}
+
 .flex-tech-list {
   display: flex;
   flex-wrap: wrap;
@@ -457,10 +461,6 @@ section li {
 .project .title{
   font-size: 0.85rem;
   color: #111111;
-}
-
-.experience-item ul{
-  margin-bottom: 0.8rem;
 }
 
 .arrow-paragraph {
