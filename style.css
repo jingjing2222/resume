@@ -54,6 +54,23 @@ body {
   print-color-adjust: exact;
 }
 
+.title-medium{
+  font-weight: 500;
+}
+
+.project-role ul ul li{
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.project-role ul ul ul li{
+  font-weight: 400;
+  font-size: 13.6px;
+}
+.project-role ul ul ul p{
+  font-weight: 400;
+}
+
 .main {
   margin: 1.5rem auto;
   width: 720px;
@@ -231,12 +248,29 @@ section li {
   margin-bottom: 0.5rem;
 }
 
-.experience-item ul ul {
+.experience-item ul ul li{
   margin-top: 0.4rem;
+  font-weight: 400;
+  font-size: 13.6px;
+}
+
+.experience-item .firebase{
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.experience-item ul li {
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .experience-item ul ul ul ul li {
   margin-bottom: 0.2rem;
+}
+
+.experience-item ul ul ul ul li a{
+  font-size: 14px;
+  font-weight: 500px;
 }
 
 .flex-tech-list {
@@ -322,8 +356,14 @@ section li {
   margin-bottom: 0.2rem;
 }
 
+
 .project ul ul {
   margin-top: 0.4rem;
+}
+
+.project ul ul li{
+  font-size: 15px;
+  font-weight: 500px;
 }
 
 .project ul ul ul {
@@ -466,4 +506,8 @@ section li {
 .arrow-paragraph {
   margin-left: 15px; 
   text-indent: -15px;
+}
+
+.indent-sm{
+  text-indent: 4px;
 }
