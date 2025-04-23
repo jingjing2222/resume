@@ -315,11 +315,11 @@ section li {
 
 .project ul {
   margin-left: 1.3rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
 .project li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.2rem;
 }
 
 .project ul ul {
@@ -327,7 +327,7 @@ section li {
 }
 
 .project ul ul ul {
-  margin-top: 0.4rem;
+  margin-top: 0.2rem;
 }
 
 /* Print styles */
