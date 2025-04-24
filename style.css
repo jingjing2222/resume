@@ -372,6 +372,12 @@ section li {
 
 /* Print styles */
 @media print {
+
+  .phone-number:before {
+    content: "7730-4966" !important; 
+    letter-spacing: normal !important;
+  }
+
   body {
     font-size: 0.85rem;
   }
