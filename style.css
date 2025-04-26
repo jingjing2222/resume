@@ -517,3 +517,7 @@ section li {
 .indent-sm{
   text-indent: 4px;
 }
+
+.experience-item .arrow-paragraph{
+  margin: 2.5px 0 5px 5px;
+}
