@@ -171,32 +171,30 @@
               <div class="project-period">2025.03.31. ~ 현재</div>
               <ul>
                 <li>프론트 리드: 전체 11명 규모, 3명의 프론트엔드 팀</li>
+                <li>프로젝트 초기 설정 및 환경 구축 (ESLint 규칙 조정, 스타일 파일 관리)</li>
                 <ul>
-                  <li>프로젝트 초기 설정 및 환경 구축 (ESLint 규칙 조정, 스타일 파일 관리)</li>
-                  <ul>
-                    <li>많은 프로젝트에서 사용중이던 airbnb 스타일을 도입하려고 했으나, tanstack router에서 생산하는 코드가 airbnb 규칙에 위배되는 경우가 많아,
-                      tanstack router에서 권장하는 린트 규칙을 도입</li>
-                    <p class="arrow-paragraph">→ 라이브러리 특성에 최적화된 린트 규칙 도입으로 불필요한 경고 감소, 개발자 경험 향상, 협업 시 일관된 코드 스타일 유지, 코드
-                      품질 및 가독성 개선, 잠재적 버그 조기 발견</p>
-                  </ul>
-                  <li>CI 구성을 위한 yarn berry 도입 및 docker 환경 구축</li>
-                  <ul>
-                    <li>private network 구조에서 gitlab runners가 npm 서버에서 의존성을 설치할 수 없었음</li>
-                    <li>사전에 docker image에 build한 node와 yarn berry의 zero install을 이용해 CI를 구성</li>
-                    <p class="arrow-paragraph">→ 보안이 중요한 환경에서 외부 네트워크 접근 없이도 CI를 구성하기 위해 Yarn Berry의 Zero-Install 기능을
-                      활용하여, 의존성 문제를 해결하고 빌드 프로세스의 안정성과 보안성을 동시에 확보</p>
-                  </ul>
-                  <li>CI 속도 1100% 개선</li>
-                  <ul>
-                    <li>apple Silicond에서 Build한 Docker image가 다른 OS에서 QEMU라는 에뮬레이터를 통해 구동하여 속도가 늦는 방식을, Linux 용으로
-                      build하여 해결</li>
-                    <p class="arrow-paragraph">→ 개발 생산성 향상을 위해 CI 파이프라인 병목 지점을 분석하고, 멀티 아키텍처 Docker 빌드 최적화와 불필요한 단계
-                      통합을 통해 CI 실행 시간을 4분 40초에서 45초로 단축함으로써 개발-테스트-배포 주기를 크게 가속화</p>
-                  </ul>
-                  <li>일주일 단의 주단위 스프린트를 통해, 업무 진행 정도, 방해 요소 등 파악</li>
-                  <p class="arrow-paragraph">→ 주간 스프린트 회의를 통해 개발 과정의 장애물을 조기에 식별하고 팀원 간 지식 공유를 촉진함으로써 팀 내 협업 문화를 강화
-                  </p>
+                  <li>많은 프로젝트에서 사용중이던 airbnb 스타일을 도입하려고 했으나, tanstack router에서 생산하는 코드가 airbnb 규칙에 위배되는 경우가 많아,
+                    tanstack router에서 권장하는 린트 규칙을 도입</li>
+                  <p class="arrow-paragraph">→ 라이브러리 특성에 최적화된 린트 규칙 도입으로 불필요한 경고 감소, 개발자 경험 향상, 협업 시 일관된 코드 스타일 유지, 코드
+                    품질 및 가독성 개선, 잠재적 버그 조기 발견</p>
                 </ul>
+                <li>CI 구성을 위한 yarn berry 도입 및 docker 환경 구축</li>
+                <ul>
+                  <li>private network 구조에서 gitlab runners가 npm 서버에서 의존성을 설치할 수 없었음</li>
+                  <li>사전에 docker image에 build한 node와 yarn berry의 zero install을 이용해 CI를 구성</li>
+                  <p class="arrow-paragraph">→ 보안이 중요한 환경에서 외부 네트워크 접근 없이도 CI를 구성하기 위해 Yarn Berry의 Zero-Install 기능을
+                    활용하여, 의존성 문제를 해결하고 빌드 프로세스의 안정성과 보안성을 동시에 확보</p>
+                </ul>
+                <li>CI 속도 1100% 개선</li>
+                <ul>
+                  <li>apple Silicond에서 Build한 Docker image가 다른 OS에서 QEMU라는 에뮬레이터를 통해 구동하여 속도가 늦는 방식을, Linux 용으로
+                    build하여 해결</li>
+                  <p class="arrow-paragraph">→ 개발 생산성 향상을 위해 CI 파이프라인 병목 지점을 분석하고, 멀티 아키텍처 Docker 빌드 최적화와 불필요한 단계
+                    통합을 통해 CI 실행 시간을 4분 40초에서 45초로 단축함으로써 개발-테스트-배포 주기를 크게 가속화</p>
+                </ul>
+                <li>일주일 단의 주단위 스프린트를 통해, 업무 진행 정도, 방해 요소 등 파악</li>
+                <p class="arrow-paragraph">→ 주간 스프린트 회의를 통해 개발 과정의 장애물을 조기에 식별하고 팀원 간 지식 공유를 촉진함으로써 팀 내 협업 문화를 강화
+                </p>
                 <li>Swagger 기반 API 연동 구조 개선</li>
                 <ul>
                   <li>openapi generator중 하나인 orval을 활용해 백엔드 통신 함수 작성 자동화</li>
