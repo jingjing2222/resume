@@ -320,7 +320,6 @@ section li {
 /* Project Styles */
 .project {
   margin-bottom: 1.5rem;
-  page-break-inside: avoid;
 }
 
 .project h3 {
@@ -356,7 +355,6 @@ section li {
   margin-bottom: 0.2rem;
 }
 
-
 .project ul ul {
   margin-top: 0.4rem;
 }
@@ -370,9 +368,8 @@ section li {
   margin-top: 0.2rem;
 }
 
-/* Print styles */
+/* Print styles - 콘텐츠 자연스럽게 흐르도록 설정 */
 @media print {
-
   .phone-number:before {
     content: "7730-4966" !important; 
     letter-spacing: normal !important;
@@ -380,6 +377,9 @@ section li {
 
   body {
     font-size: 0.85rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .main {
@@ -396,19 +396,46 @@ section li {
     font-size: 0.8rem;
   }
 
-  /* Ensure content fits in 2 pages */
+  /* 페이지 설정 최적화 */
   @page {
     margin: 0.7cm;
     size: A4;
   }
 
-  h2 {
-    margin-top: 0.8rem;
+  /* 페이지 나누기 허용 - 자연스러운 콘텐츠 흐름 */
+  section, .project, .experience-item, .skill-group, .education-item, .language-item {
+    page-break-inside: auto;
+    break-inside: auto;
   }
 
-  .project {
-    page-break-inside: avoid;
-    break-inside: avoid; 
+  /* 헤더 설정 */
+  h2, h3, h4 {
+    page-break-after: auto;
+    break-after: auto;
+    page-break-before: auto;
+    break-before: auto;
+  }
+
+  /* 리스트 항목도 자연스럽게 나눠지도록 */
+  li {
+    page-break-inside: auto;
+    break-inside: auto;
+  }
+
+  /* 모든 컨텐츠가 자유롭게 흐르도록 설정 */
+  .project-role, .project-features, .project-achievements {
+    page-break-inside: auto;
+    break-inside: auto;
+  }
+
+  header {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  /* 기본 스타일 유지 */
+  h2 {
+    margin-top: 0.8rem;
   }
 
   .tech-item {
