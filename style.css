@@ -225,6 +225,18 @@ section li {
   margin-bottom: 0.7rem;
 }
 
+.app-item h3{
+  margin-bottom:0.3rem;
+}
+
+.app-item ul{
+  margin-left: 1.3rem;
+}
+
+.app-item li{
+  margin-bottom: 0.3rem;
+}
+
 .education-item h3,
 .language-item h3 {
   font-size: 0.9rem;
@@ -403,7 +415,7 @@ section li {
   }
 
   /* 페이지 나누기 허용 - 자연스러운 콘텐츠 흐름 */
-  section, .project, .experience-item, .skill-group, .education-item, .language-item {
+  section, .project, .experience-item, .skill-group, .education-item, .language-item .app-item {
     page-break-inside: auto;
     break-inside: auto;
   }
