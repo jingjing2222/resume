@@ -181,12 +181,20 @@
                   <p class="arrow-paragraph">→ 라이브러리 특성에 최적화된 린트 규칙 도입으로 불필요한 경고 감소, 개발자 경험 향상, 협업 시 일관된 코드 스타일 유지, 코드
                     품질 및 가독성 개선, 잠재적 버그 조기 발견</p>
                 </ul>
-                <li>CI 구성을 위한 yarn berry 도입 및 docker 환경 구축</li>
+                <li>On-premise Private Network 환경에서 CI/CD 구성</li>
                 <ul>
-                  <li>private network 구조에서 gitlab runners가 npm 서버에서 의존성을 설치할 수 없었음</li>
-                  <li>사전에 docker image에 build한 node와 yarn berry의 zero install을 이용해 CI를 구성</li>
-                  <p class="arrow-paragraph">→ 보안이 중요한 환경에서 외부 네트워크 접근 없이도 CI를 구성하기 위해 Yarn Berry의 Zero-Install 기능을
-                    활용하여, 의존성 문제를 해결하고 빌드 프로세스의 안정성과 보안성을 동시에 확보</p>
+                  <li>사전에 node와 yarn berry가 설치된 docker image에 build하여 사설 서버 registry에 push하여 이용해 형상관리 서버에 CI를 구성</li>
+                  <li>scp와 ssh를 통해 gitlab-runner에서 build된 정적 파일을 운영 서버로 배포</li>
+                  <li>nginx를 통한 테스트 환경 http 배포와 인증서를 통한 https 배포를 완료</li>
+                  <p class="arrow-paragraph">→ 네트워크 제약 환경에서도 안정적이고 보안성이 강화된 완전한 CI/CD 시스템 구현으로 개발 및 배포 프로세스의 효율성과 일관성 확보
+                  </p>
+                </ul>
+                <li>의존성 문제 해결을 위한 pnpm -> yarn berry migration</li>
+                <ul>
+                  <li>private network 구조에서 gitlab runners가 npm 서버에서의 의존성을 설치할 수 없었음</li>
+                  <li>pnpm을 사용하던 환경에서 yarn berry로 migration하여 zero install을 활용해 프로젝트를 구성</li>
+                  <p class="arrow-paragraph">→ 보안이 중요한 환경에서 외부 네트워크 접근 없이도 CI를 구성하기 위해 의존성 문제를 해결하고 빌드 프로세스의 안정성과 보안성을
+                    동시에 확보</p>
                 </ul>
                 <li>CI 속도 1100% 개선</li>
                 <ul>
