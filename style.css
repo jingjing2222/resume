@@ -568,6 +568,9 @@ section li {
 .experience-item .arrow-paragraph {
     margin: 2.5px 0 5px 5px;
 }
+.article .arrow-paragraph{
+    margin: 2.5px 0 0 15px;
+}
 
 .app-item p{
     margin-bottom: 5px;
