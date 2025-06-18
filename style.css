@@ -315,7 +315,7 @@ section li {
   }
 
   .social-link {
-    font-size: 0.8rem;
+    font-size: 0.9rem; /* 0.8rem에서 0.9rem으로 증가 */
   }
 
   /* 페이지 설정 최적화 */
@@ -324,36 +324,45 @@ section li {
     size: A4;
   }
 
-  /* 페이지 나누기 허용 - 자연스러운 콘텐츠 흐름 */
-  section,
+  /* section이 끊기지 않도록 강화된 설정 */
+  section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-before: auto;
+    break-before: auto;
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  /* 프로젝트, 경험, 스킬 그룹도 끊기지 않도록 */
   .project,
   .experience-item,
   .skill-group,
   .education-item,
-  .language-item .app-item {
-    page-break-inside: auto;
-    break-inside: auto;
+  .app-item {
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
 
-  /* 헤더 설정 */
+  /* 헤더 설정 - section과 함께 이동하도록 */
   h2,
   h3,
   h4 {
-    page-break-after: auto;
-    break-after: auto;
+    page-break-after: avoid;
+    break-after: avoid;
     page-break-before: auto;
     break-before: auto;
   }
 
-  /* 리스트 항목도 자연스럽게 나눠지도록 */
+  /* 리스트 항목도 끊기지 않도록 */
   li {
-    page-break-inside: auto;
-    break-inside: auto;
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
 
   header {
-    page-break-after: auto;
-    break-after: auto;
+    page-break-after: avoid;
+    break-after: avoid;
   }
 
   /* 기본 스타일 유지 */
