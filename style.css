@@ -96,9 +96,12 @@ a:hover {
 
 .blog-link {
   color: #555;
-  display: inline-flex;
-  align-items: center;
+  display: inline;
   width: fit-content;
+}
+
+.blog-link b {
+  white-space: nowrap;
 }
 
 .blog-link:hover {
@@ -325,27 +328,27 @@ section li {
   }
 
   /* section이 끊기지 않도록 강화된 설정 */
-  section {
+  /* section {
     page-break-inside: avoid;
     break-inside: avoid;
     page-break-before: auto;
     break-before: auto;
     page-break-after: auto;
     break-after: auto;
-  }
+  } */
 
   /* 프로젝트, 경험, 스킬 그룹도 끊기지 않도록 */
-  .project,
+  /* .project,
   .experience-item,
   .skill-group,
   .education-item,
   .app-item {
     page-break-inside: avoid;
     break-inside: avoid;
-  }
+  } */
 
   /* 헤더 설정 - section과 함께 이동하도록 */
-  h2,
+  /* h2,
   h3,
   h4 {
     page-break-after: avoid;
@@ -355,7 +358,7 @@ section li {
   }
 
   /* 리스트 항목도 끊기지 않도록 */
-  li {
+  /* li {
     page-break-inside: avoid;
     break-inside: avoid;
   }
@@ -363,7 +366,8 @@ section li {
   header {
     page-break-after: avoid;
     break-after: avoid;
-  }
+  } */
+  */
 
   /* 기본 스타일 유지 */
   h2 {
@@ -387,6 +391,21 @@ section li {
 
   .social-link {
     margin-right: 0;
+  }
+
+  /* Toy Project 섹션의 링크들이 모바일에서 자연스럽게 보이도록 */
+  .app-item ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .app-item ul li .title-link {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 0.5rem;
   }
 }
 
