@@ -104,6 +104,10 @@ a:hover {
   white-space: nowrap;
 }
 
+.blog-link .icon {
+  vertical-align: middle;
+}
+
 .blog-link:hover {
   background-color: #666;
   color: #fff;
