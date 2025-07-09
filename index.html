@@ -37,6 +37,26 @@
                 UX/DX를 최적화하고, 개발을 낯설게 느끼는 이들에게도 친근하게 지식을 전파할 수 있는 개발자가 되고싶습니다.</p>
         </section>
 
+        <section class="work">
+            <h2>Work</h2>
+
+            <div class="experience-item">
+                <h3>Viva Republica (Toss) - React Native Framework Team</h3>
+                <div class="project-period">2025.07.01 ~ 2025.08.31 (2개월) | Frontend Platform Assistant</div>
+                <ul>
+                    <li>Granite 프로젝트 RadonIDE 호환성 문제: Metro 전용 transformPath 스펙을 <b>Babel Plugin으로 Migration</b> 구현하여 기존
+                        Granite 프로젝트도 RadonIDE에서 사용 가능하도록 달성</li>
+                    <li>RN 0.72.6 디버깅 도구 부재 문제: ReactDevTools 전역 객체의 DevtoolsAgent가 존재하지 않는 상황에서 <b>ESbuild와
+                            flow-strip</b>으로 React Devtools에서 추출하여 inject로 디버깅 환경 구축</li>
+                    <li>DevtoolsAgent의 React 컴포넌트 접근 불가 문제: RNRenderer이 initialize 시 생성되는 instanceCache Map을 <b>전역
+                            변수화</b>하여 DevtoolsAgent에서 React 컴포넌트 트리 접근 가능하도록 구현</li>
+                    <li>Granite 프로젝트 RadonIDE 통신 스펙 부재 문제: RadonIDE 기본 스펙이 있지만 Granite에 Metro 연동 스펙이 없는 상황에서
+                        <b>WebSocket + CDP(Chrome DevTools Protocol)</b>로 통신 기능 추가하여 Granite 프로젝트도 RadonIDE Integration
+                        완료</li>
+                </ul>
+            </div>
+        </section>
+
         <section class="project">
             <h2>Project</h2>
 
