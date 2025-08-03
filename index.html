@@ -34,7 +34,7 @@
         <section class="about">
             <p>저는 개발이라는 언어가 누구에게나 열려 있어야 한다고 믿습니다.<br />
                 오픈소스와 웹의 공유 정신처럼, 기술은 경계를 허물고 사람을 연결해야 한다고 생각합니다.<br />
-                UX/DX를 최적화하고, 개발을 낯설게 느끼는 이들에게도 친근하게 지식을 전파할 수 있는 개발자가 되고싶습니다.</p>
+                UX/DX를 최적화하고, 개발을 낯설게 느끼는 이들에게저도 친근하게 지식을 전파할 수 있는 개발자가 되고싶습니다.</p>
         </section>
 
         <section class="work">
@@ -47,12 +47,21 @@
                     <li>Granite 프로젝트 RadonIDE 호환성 문제: Metro 전용 transformPath 스펙을 <b>Babel Plugin으로 Migration</b> 구현하여 기존
                         Granite 프로젝트도 RadonIDE에서 사용 가능하도록 달성</li>
                     <li>RN 0.72.6 디버깅 도구 부재 문제: ReactDevTools 전역 객체의 DevtoolsAgent가 존재하지 않는 상황에서 <b>ESbuild와
-                            flow-strip</b>으로 React Devtools에서 추출하여 inject로 디버깅 환경 구축</li>
+                            flow-strip</b>으로 React Devtools에서 추출 및 polyfill로 디버깅 환경 구축</li>
                     <li>DevtoolsAgent의 React 컴포넌트 접근 불가 문제: RNRenderer이 initialize 시 생성되는 instanceCache Map을 <b>전역
                             변수화</b>하여 DevtoolsAgent에서 React 컴포넌트 트리 접근 가능하도록 구현</li>
                     <li>Granite 프로젝트 RadonIDE 통신 스펙 부재 문제: RadonIDE 기본 스펙이 있지만 Granite에 Metro 연동 스펙이 없는 상황에서
                         <b>WebSocket + CDP(Chrome DevTools Protocol)</b>로 통신 기능 추가하여 Granite 프로젝트도 RadonIDE Integration
-                        완료</li>
+                        완료
+                    </li>
+                    <li>사내 복지 앱 웹뷰 → React Native 마이그레이션: 기존 웹뷰 중심 서비스의 성능 및 UX 한계 해결을 위한 <b>Granite 기반 네이티브 앱 전환
+                            프로젝트</b> 담당, 플래닝부터 POC 개발까지 전체 마이그레이션 프로세스 설계 및 실행</li>
+                    <li>웹용 SDK → Granite 전용 SDK 재구축: 기존 웹 환경용 SDK의 React Native 호환성 부재 해결을 위한 <b>Granite 전용 SDK 아키텍처 설계
+                            및 구현</b>, 네이티브 환경에 최적화된 모듈 재개발</li>
+                    <li>웹 → 모바일 디자인 시스템 전환: 웹 중심의 디자인 시스템을 <b>React Native 전용 디자인 시스템으로 재설계</b>, 모바일 UX 가이드라인에 맞는 컴포넌트
+                        체계 구축 및 일관된 사용자 경험 제공</li>
+                    <li>레거시 인증 시스템 최신화: 기존 인증 시스템의 보안 및 UX 문제 해결을 위한 <b>최신 인증 시스템으로 마이그레이션</b>, 보안성 강화 및 사용자 경험이 개선된 인증
+                        플로우 구현</li>
                 </ul>
             </div>
         </section>
@@ -102,25 +111,14 @@
                 <ul>
                     <li>소셜 로그인 통합 이슈: 카카오, 구글, 애플 각각 다른 SDK와 인증 플로우로 코드 중복 발생하여 <b>어댑터 패턴</b> 적용, 통합 인터페이스 구현으로 새 플랫폼 추가
                         시 기존 코드 수정 없이 확장 가능</li>
-                    <li>코드 유지보수성 저하: 컴포넌트 내 로직 혼재로 테스트 어려움 및 재사용성 부족하여 <b>커스텀 훅 패턴</b> 및 도메인 기반 폴더 구조 적용, 비즈니스 로직과 UI 완전
-                        분리로 독립적 테스트 가능</li>
                     <li>앱스토어 심사 지연 리스크: 긴급 버그 수정 시 2-7일 심사 기간으로 서비스 중단 위험이 있어 <b>Code-push(hot-updater)</b> 시스템 도입, 실시간
                         무중단 업데이트 배포 가능</li>
-                    <li>빌드 성능 저하 문제: 기존 Metro 번들러의 treeshaking, HMR 속도 저하 문제를 <b>Rspack 번들러</b> 도입으로 해결, 빌드 속도 50% 이상 개선
+                    <li>위치 정확도 및 배터리 효율성 문제: 단일 위치 제공자 사용 시 정확도 부족 및 배터리 소모 과다 문제를 <b>다중 위치
+                            제공자(@react-native-community/geolocation, react-native-geolocation-service) 통합 구조</b> 설계로 해결,
+                        위치 정확도 향상 및 배터리 효율성 개선
                     </li>
-                    <li>위치 정확도 및 배터리 효율성 문제: 단일 위치 제공자 사용 시 정확도 부족 및 배터리 소모 과다 문제를 <b>다중 위치 제공자(@react-native-community/geolocation, react-native-geolocation-service) 통합 구조</b> 설계로 해결, 위치 정확도 향상 및 배터리 효율성 개선
-                    </li>
-                    <li>실시간 위치 제어 성능 저하: 기존 터치 이벤트의 지연 및 끊김 현상으로 사용자 경험 저하 문제를 <b>네이티브 성능 최적화된 조이스틱 컴포넌트</b> 개발로 해결, 부드러운 사용자 인터랙션 구현
-                    </li>
-                    <li>다양한 이미지 업로드 시나리오 대응 불가: 갤러리, 카메라, 실시간 촬영 등 각기 다른 이미지 소스 처리의 복잡성 문제를 <b>react-native-image-picker와 react-native-vision-camera 통합</b>으로 해결, 다양한 이미지 업로드 시나리오 대응 및 메모리 효율성 향상
-                    </li>
-                    <li>전역 상태 관리 성능 저하: React Context 사용 시 불필요한 리렌더링으로 성능 저하 문제를 <b>Zustand 기반 상태 관리</b>로 해결, locationStore를 통한 전역 위치 상태 관리 및 React Context 대비 성능 우수한 경량 상태 관리 달성
-                    </li>
-                    <li>컴포넌트 로직 혼재 문제: 비즈니스 로직과 UI 로직이 컴포넌트 내 혼재되어 테스트 및 재사용성 저하 문제를 <b>커스텀 훅 패턴(useHomeMap, useImagePicker)</b>으로 비즈니스 레이어와 서비스 레이어 분리, 도메인별 로직 분리 및 재사용성과 테스트 용이성 향상
-                    </li>
-                    <li>개발 환경 구성 복잡성: 기존 React Native CLI의 설정 복잡성 및 빌드 성능 저하 문제를 <b>RNEF(React Native Enhanced Framework)</b> 도입으로 해결, 기존 React Native CLI 대비 향상된 개발 경험 및 빌드 성능, 플러그인 시스템 활용
-                    </li>
-                    <li>API 타입 정의 수작업 문제: 백엔드 API 변경 시 수동 타입 정의로 인한 휴먼 에러 및 생산성 저하 문제를 <b>Orval 기반 API 타입 자동 생성</b>으로 해결, OpenAPI 스펙에서 자동 타입 생성으로 타입 안정성 확보 및 개발 생산성 향상
+                    <li>실시간 위치 제어 성능 저하: 기존 터치 이벤트의 지연 및 끊김 현상으로 사용자 경험 저하 문제를 <b>네이티브 성능 최적화된 조이스틱 컴포넌트</b> 개발로 해결,
+                        부드러운 사용자 인터랙션 구현
                     </li>
                 </ul>
 
@@ -189,6 +187,7 @@
             <h2>Toy Project</h2>
             <div class="app-item">
                 <ul>
+                    <li><a href="https://dongnebook.site/" target="_blank" class="title-link">동네북 - 독서모임 아카이빙 사이트 (React, TypeScript) <span class="icon link-icon"></span></a></li>
                     <li><a href="https://rebiewook.site/" target="_blank" class="title-link">독후감 플랫폼 Rebiewook (React,
                             TypeScript) <span class="icon link-icon"></span></a> <a
                             href="https://github.com/jingjing2222/Rebiewook" target="_blank"
