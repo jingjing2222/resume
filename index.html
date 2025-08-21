@@ -75,7 +75,7 @@
                     </li>
                     <li>로컬 개발 환경 인증 불가: HTTP 백엔드의 SameSite 쿠키 이슈를 <b>Vite Proxy</b>로 해결하여 로컬 개발 환경 정상화
                     </li>
-                    <li>분산된 API 로직: 전역에서 반복되던 API 요청 로직을 <b>Axios Interceptor</b>로 에러, 인증을 중앙화하여 코드 중복 제거 및 유지보수성 향상
+                    <li>분산된 API 로직: API 요청 로직을 <b>Axios Interceptor</b>로 에러, 인증을 중앙화하여 코드 중복 제거 및 유지보수성 향상
                     </li>
                     <li>수동적인 On-premise 배포: <b>GitLab Runner와 SCP/SSH</b>로 On-premise 서버 자동 배포 파이프라인을 구축</li>
                     <li>일관성 없는 UI와 재사용성 부재: <b>아토믹 디자인과 Storybook</b>으로 개발과 동시에 문서화를 구축하여 UI 일관성 확보</li>
@@ -92,7 +92,7 @@
                     <li>롤링 슬라이더: <b>효율적인 배열 재활용 기반 무한 애니메이션</b>을 통해 무한처럼 보이는 UX와 메모리 성능을 동시에 달성</li>
                     <li>특정 요소만 애니메이션 출력: <b>Intersection Observer API</b>를 활용하여 뷰포트에 진입한 요소만 관찰하도록 구현</li>
                     <li>끊기는 애니메이션: <b>requestAnimationFrame</b>을 활용하여 60fps에 가까운 부드러운 애니메이션을 구현</li>
-                    <li>긴급한 반응형 디자인 요구사항: 마감 직전 추가된 반응형 요구사항을 재사용성이 높은 <b>Composition 패턴</b>으로 개발하여 기한 내 프로젝트 완수</li>
+                    <li>긴급한 반응형 디자인 요구사항: 반응형 요구사항을 재사용성이 높은 <b>Composition 패턴</b>으로 개발하여 기한 내 프로젝트 완수</li>
                     </li>
                 </ul>
             </div>
@@ -108,8 +108,7 @@
                     <li>JWT 토큰 만료시 API 재처리 문제: 토큰 만료로 인한 API 실패 시 자동 갱신 및 지수 백오프를 통한 원본 요청 재처리를 위해 <b>제네릭 기반
                             API 중앙화 시스템</b> 구현으로 해결, 안정적인 인증 기능 완성
                     </li>
-                    <li>관리자 테스트 환경 개선: 실제 이동 없이 위치 기반 기능 테스트가 어려워 <b>가상 위치 조작 조이스틱</b> 개발,
-                        관리자가 지도상에서 자유롭게 위치를 이동하며 실시간 테스트 가능</li>
+                    <li>관리자 테스트 환경 개선:<b>가상 위치 조작 조이스틱</b>을 개발하여 관리자가 지도상에서 자유롭게 위치를 이동하며 실시간 테스트 가능</li>
                 </ul>
 
             </div>
@@ -177,17 +176,10 @@
             <h2>Toy Project</h2>
             <div class="app-item">
                 <ul>
-                    <li><a href="https://dongnebook.site/" target="_blank" class="title-link">동네북: 독서모임 아카이빙 사이트
-                            (React, TypeScript) <span class="icon link-icon"></span></a></li>
                     <li><a href="https://rebiewook.site/" target="_blank" class="title-link">독후감 플랫폼 Rebiewook (React,
                             TypeScript) <span class="icon link-icon"></span></a> <a
                             href="https://github.com/jingjing2222/Rebiewook" target="_blank"
                             class="title-link">GitHub<span class="icon github-icon"></span></a></li>
-                    <li><a href="https://fbplayer.site/" target="_blank" class="title-link">한국기술교육대학교 수업자료(축구선수 찾기)
-                            <span class="icon link-icon"></span></a> <a href="https://github.com/jingjing2222/fbplayer"
-                            target="_blank" class="title-link">GitHub<span class="icon github-icon"></span></a></li>
-                    <li><a href="https://rsp-7tv.pages.dev/" target="_blank" class="title-link">가위바위보 문제 풀기
-                            <span class="icon link-icon"></span></a> </li>
                     <li><a href="https://marketplace.visualstudio.com/items?itemName=jingjing2222.jj-stretch"
                             target="_blank" class="title-link">jj-stretch: 스트레칭 타이머 vs code Extension
                             <span class="icon link-icon"></span></a> <a
@@ -201,12 +193,11 @@
             <div class="education-item">
                 <h3>📚 ASAC 웹 풀스택과정 7기 부트캠프 (2024.12.~ 2025.05.)</h3>
                 <h3>🤵‍♂️ 천안예술의전당 헤드어셔 (2024.06.~ 2025.06.)</h3>
-                <h3>🇺🇸 Opic IM2 (2024.07.)</h3>
                 <h3>🪴 한국기술교육대학교 생활관 가드닝 단체 회장 (2023.03.~ 2023.12.)</h3>
                 <h3> <a href="https://kookbang.dema.mil.kr/newsWeb/20210422/12/ATCE_CTGR_0010010000/view.do"
                         target="_blank" class="title-link">❤️ 조혈모세포 기증 (2021.03.)<span class="link-icon"></span></a>
                 </h3>
-                <h3>📖 한국기술교육대학교 컴퓨터공학부 졸업예정 (18.03 ~ 25.08)</h3>
+                <h3>📖 한국기술교육대학교 컴퓨터공학부 졸업 (18.03 ~ 25.08)</h3>
             </div>
         </section>
 
