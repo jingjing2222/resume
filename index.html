@@ -40,7 +40,9 @@
         "url": "https://jingjing2222.me",
         "sameAs": [
             "https://github.com/jingjing2222",
-            "https://velog.io/@jingjing2222/posts"
+            "https://velog.io/@jingjing2222/posts",
+            "https://brunch.co.kr/@jay2",
+            "https://www.linkedin.com/in/%ED%98%95%EC%A0%95-%EA%B9%80-28005a360/"
         ],
         "email": "hj.jingjing2222@gmail.com",
         "knowsAbout": [
@@ -71,21 +73,32 @@
             <h1 class="title">HyeongJeong Kim(김형정)</h1>
             <div class="title-desc">Frontend Developer</div>
 
-            <a href="https://github.com/jingjing2222" target="_blank" class="social-link">
-                <span class="icon github-icon" role="img" aria-label="GitHub 아이콘"></span> GitHub
-            </a>
+            <div class="social-links">
+                <a href="https://github.com/jingjing2222" target="_blank" class="social-link">
+                    <span class="icon github-icon" aria-hidden="true"></span> GitHub
+                </a>
 
-            <a href="https://velog.io/@jingjing2222/posts" target="_blank" class="social-link">
-                <span class="icon blog-icon" role="img" aria-label="블로그 아이콘"></span> Velog
-            </a>
+                <a href="https://velog.io/@jingjing2222/posts" target="_blank" class="social-link">
+                    <span class="icon blog-icon" aria-hidden="true"></span> Velog
+                </a>
 
-            <a href="mailto:hj.jingjing2222@gmail.com" target="_blank" class="social-link">
-                <span class="icon email-icon" role="img" aria-label="이메일 아이콘"></span> Email
-            </a>
+                <a href="https://brunch.co.kr/@jay2" target="_blank" class="social-link">
+                    <span class="icon essay-icon" aria-hidden="true"></span> Essays
+                </a>
 
-            <div class="social-link">
-                <span class="icon phone-icon" role="img" aria-label="전화번호 아이콘"></span><span>010-</span><span
-                    class="phone-number"></span>
+                <a href="https://www.linkedin.com/in/%ED%98%95%EC%A0%95-%EA%B9%80-28005a360/" target="_blank"
+                    class="social-link">
+                    <span class="icon linkedin-icon" aria-hidden="true"></span> LinkedIn
+                </a>
+
+                <a href="mailto:hj.jingjing2222@gmail.com" target="_blank" class="social-link">
+                    <span class="icon email-icon" aria-hidden="true"></span> Email
+                </a>
+
+                <div class="social-link">
+                    <span class="icon phone-icon" aria-hidden="true"></span><span>010-</span><span
+                        class="phone-number"></span>
+                </div>
             </div>
         </header>
 
@@ -101,8 +114,19 @@
             <h2>Work</h2>
 
             <div class="experience-item">
-                <h3>Viva Republica (Toss) - Frontend Platform Team</h3>
-                <div class="project-period">2025.07.01 ~ 2025.08.31 (2개월) | Frontend Platform Assistant</div>
+                <h3>Viva Republica (Toss) - React Native Framework Team</h3>
+                <div class="project-period">2025.09.23 ~ 현재 | Frontend Platform Engineer</div>
+                <ul>
+                    <li>React Native 기반 토스 서비스가 <b>더 쉽고 빠르고 안정적으로 개발</b>될 수 있도록 사내 Framework의 API 설계·구현,
+                        버전 품질 유지, 빌드·배포 개선, 성능 및 UI/UX 품질 개선 담당</li>
+                    <li>React Native 개발 환경의 표준을 목표로 <b>Granite 오픈소스와 기존 앱 통합 가능한 구조</b>를 발전시키며, 개발자 경험 중심의
+                        Framework 플랫폼 고도화</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Viva Republica (Toss) - React Native Framework Team</h3>
+                <div class="project-period">2025.07.01 ~ 2025.09.22 (2개월) | Frontend Platform Assistant</div>
                 <ul>
                     <li>사내 Framework 프로젝트 RadonIDE 호환성 문제: Metro 전용 스펙을 <b>Babel Plugin을 이용해</b> 구현하여 기존
                         사내 Frmaework 프로젝트도 RadonIDE라는 vscode Extension에서 사용 가능하도록 달성</li>
@@ -118,107 +142,116 @@
             </div>
         </section>
 
-        <section class="project">
-            <h2>Project</h2>
-
-            <div class="project" style="margin-bottom: 25px;">
-                <h3>교보DTS 컴플라이언스 플랫폼 개발 (React, TypeScript)</h3>
-                <div class="project-period">2025.03 ~ 2025.05 (3개월) | 프론트엔드 리드 (11명 중 3명 FE팀)</div>
-                <ul>
-                    <li>느린 CI/CD 속도: 기존 4분 40초에 달하던 빌드 시간을 Docker 멀티 아키텍처 최적화로 45초로 단축하여 <u>1100% 개선</u></li>
-                    <li>까다로운 의존성 관리: Private Network에서 외부 의존성을 설치할 수 없는 문제를 <b>Yarn Berry Zero Install</b>로
-                        해결하여 보안, 빌드 환경 개선</li>
-                    <li>반복적인 API 타입 정의: 수작업으로 관리되던 백엔드 통신 함수를 <b>Orval(OpenAPI Generator)</b>로 자동화하여 관련 작업을
-                        <u>60% 감소</u>시키고 휴먼 에러 방지
-                    </li>
-                    <li>로컬 개발 환경 인증 불가: HTTP 백엔드의 SameSite 쿠키 이슈를 <b>Vite Proxy</b>로 해결하여 로컬 개발 환경 정상화
-                    </li>
-                    <li>분산된 API 로직: API 요청 로직을 <b>Axios Interceptor</b>로 에러, 인증을 중앙화하여 코드 중복 제거 및 유지보수성 향상
-                    </li>
-                    <li>수동적인 On-premise 배포: <b>GitLab Runner와 SCP/SSH</b>로 On-premise 서버 자동 배포 파이프라인을 구축</li>
-                    <li>일관성 없는 UI와 재사용성 부재: <b>아토믹 디자인과 Storybook</b>으로 개발과 동시에 문서화를 구축하여 UI 일관성 확보</li>
-                </ul>
-            </div>
-
-
-            <div class="project" style="margin-bottom: 25px;">
-                <h3><a href="https://www.culppy.net/ko" target="_blank" class="title-link">사색의 향기 퍼블리싱 개발 (Next.js,
-                        TypeScript) <span class="link-icon"></span></a></h3>
-                <div class="project-period">2025.03 (2주) | 프론트엔드 리드</div>
-                <ul>
-                    <li>디자이너와의 협업: 디자이너 7명과의 독대 회의 통해 디자인 시안과의 <u>정확도 100%</u> 달성</li>
-                    <li>롤링 슬라이더: <b>효율적인 배열 재활용 기반 무한 애니메이션</b>을 통해 무한처럼 보이는 UX와 메모리 성능을 동시에 달성</li>
-                    <li>특정 요소만 애니메이션 출력: <b>Intersection Observer API</b>를 활용하여 뷰포트에 진입한 요소만 관찰하도록 구현</li>
-                    <li>끊기는 애니메이션: <b>requestAnimationFrame</b>을 활용하여 60fps에 가까운 부드러운 애니메이션을 구현</li>
-                    <li>긴급한 반응형 디자인 요구사항: 반응형 요구사항을 재사용성이 높은 <b>Composition 패턴</b>으로 개발하여 기한 내 프로젝트 완수</li>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="project">
-                <h3>포캣냥 - 위치 기반 대학가 길고양이 커뮤니티 (React Native, TypeScript)</h3>
-                <div class="project-period">2025.03 ~ 현재 | 4명 팀 프로젝트에서 프론트엔드 담당, 출시 완료</div>
-                <ul>
-                    <li>소셜 로그인 통합 이슈: 카카오, 구글, 애플 각각 다른 SDK와 인증 플로우로 코드 중복 발생하여 <b>어댑터 패턴</b> 적용, 통합 인터페이스 구현으로 새 플랫폼 추가
-                        시 기존 코드 수정 없이 확장 가능</li>
-                    <li>앱스토어 심사 지연 리스크: 긴급 버그 수정 시 2-7일 심사 기간으로 서비스 중단 위험이 있어 <b>Code-push(hot-updater)</b> 시스템 도입, 실시간
-                        무중단 업데이트 배포 가능</li>
-                    <li>JWT 토큰 만료시 API 재처리 문제: 토큰 만료로 인한 API 실패 시 자동 갱신 및 지수 백오프를 통한 원본 요청 재처리를 위해 <b>제네릭 기반
-                            API 중앙화 시스템</b> 구현으로 해결, 안정적인 인증 기능 완성
-                    </li>
-                    <li>관리자 테스트 환경 개선:<b>가상 위치 조작 조이스틱</b>을 개발하여 관리자가 지도상에서 자유롭게 위치를 이동하며 실시간 테스트 가능</li>
-                </ul>
-
-            </div>
-        </section>
-
         <section class="open-source">
             <h2>Open Source</h2>
 
             <div class="experience-item">
-                <h3><a href="https://github.com/Hacker0x01/react-datepicker/pull/5406" target="_blank"
-                        class="title-link">React Datepicker 타입 정의 개선 <span class="icon github-icon" role="img"
-                            aria-label="GitHub 아이콘"></span></a>
-                    <a href="https://velog.io/@jingjing2222/오픈-소스-쉬워요-한번-맛봐요" target="_blank"
-                        class="title-link title-medium"> Blog<span class="icon blog-icon" role="img"
-                            aria-label="블로그 아이콘"></span></a>
-                </h3>
+                <h3><a href="https://github.com/jingjing2222/react-native-nitro-geolocation" target="_blank"
+                        class="title-link">react-native-nitro-geolocation
+                        <span class="icon github-icon" aria-hidden="true"></span></a></h3>
                 <ul>
-                    <li>TypeScript 4.8 업그레이드로 인한 타입 호환성: <a href="https://velog.io/@jingjing2222/오픈-소스-쉬워요-한번-맛봐요"
-                            target="_blank" class="blog-link"><b>Partial 타입</b>을 활용하여 props 불일치 해결 <span
-                                class="icon blog-icon" role="img" aria-label="블로그 아이콘"
-                                style="margin-left: 5px;"></span></a></li>
+                    <li><a href="https://react-native-nitro-geolocation.pages.dev/guide/why-nitro-module" target="_blank"
+                            class="doc-link">유지보수가 둔화된 <b>@react-native-community/geolocation</b>을 React Native New
+                            Architecture/Nitro Modules 기반으로 재구현하고, iOS/Android native location API를 JSI direct callback
+                            구조로 연결&nbsp;<span class="link-icon" aria-hidden="true"></span></a></li>
+                    <li><a href="https://react-native-nitro-geolocation.pages.dev/guide/modern-api" target="_blank"
+                            class="doc-link"><b>Modern API</b>: <code>getCurrentPosition</code>,
+                            <code>requestPermission</code>, <code>useWatchPosition</code> 중심의 Promise/Hook API로
+                            callback/watch ID 관리보다 현대적인 DX 제공&nbsp;<span class="link-icon" aria-hidden="true"></span></a></li>
+                    <li><a href="https://react-native-nitro-geolocation.pages.dev/guide/legacy-api" target="_blank"
+                            class="doc-link"><b>/compat subpath</b>로 기존 callback API의 drop-in replacement를 제공해 migration 비용을
+                            낮춤&nbsp;<span class="link-icon" aria-hidden="true"></span></a></li>
+                    <li><a href="https://react-native-nitro-geolocation.pages.dev/guide/devtools" target="_blank"
+                            class="doc-link"><b>@react-native-nitro-geolocation/rozenite-plugin</b>을 함께 개발해 Rozenite
+                            DevTools에서 interactive map, preset, keyboard/manual input 기반 위치 mocking과 조정 지원
+                            &nbsp;<span class="link-icon" aria-hidden="true"></span></a></li>
                 </ul>
             </div>
 
             <div class="experience-item">
-                <h3><a href="https://github.com/gronxb/hot-updater/pull/212" target="_blank"
-                        class="title-link">hot-updater Firebase 플러그인 개발
-                        <span class="icon github-icon" role="img" aria-label="GitHub 아이콘"></span></a></h3>
+                <h3><a href="https://github.com/facebook/react-native" target="_blank"
+                        class="title-link">facebook/react-native
+                        <span class="icon github-icon" aria-hidden="true"></span></a></h3>
                 <ul>
+                    <li><a href="https://github.com/facebook/react-native/pull/56652" target="_blank"
+                            class="inline-github-link">Android에서 <b>overrideBySynchronousMountPropsAtMountingAndroid</b> 기본값을
+                            활성화해 Native Animated direct manipulation props가 stale Fabric mount props에 덮이던 레거시 기본 정책 수정
+                            <span class="icon github-icon" aria-hidden="true"></span></a></li>
+                    <li><a href="https://github.com/facebook/react-native/pull/56390" target="_blank"
+                            class="inline-github-link"><b>StyleSheet.absoluteFillObject</b> 제거 changelog 정정 기여
+                            <span class="icon github-icon" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3><a href="https://github.com/toss/granite" target="_blank"
+                        class="title-link">@toss/granite React Native Framework
+                        <span class="icon github-icon" aria-hidden="true"></span></a></h3>
+                <ul>
+                    <li><a href="https://github.com/toss/granite/pull/275" target="_blank" class="inline-github-link"><b>@granite-js/vitest
+                                신규 패키지 개발 <span class="icon github-icon" aria-hidden="true"></span></b></a>: Vitest에서
+                        React Native Testing Library를 사용할 수 있도록 Jest bridge, RN runtime bootstrap, native module mock, Flow
+                        stripping/source transform, mirror cache, 문서와 테스트 구현</li>
+                    <li><b>@granite-js/vitest 안정화</b>: <a href="https://github.com/toss/granite/pull/277"
+                            target="_blank" class="inline-github-link">consumer RN source 기반 polyfill 로딩 <span
+                                class="icon github-icon" aria-hidden="true"></span></a>, <a
+                            href="https://github.com/toss/granite/pull/278" target="_blank"
+                            class="inline-github-link">Ubuntu 20 호환 Flow stripping <span class="icon github-icon"
+                                aria-hidden="true"></span></a>, <a href="https://github.com/toss/granite/pull/284"
+                            target="_blank" class="inline-github-link">flat React Native transform cache와 manifest
+                            resolver 개선 <span class="icon github-icon" aria-hidden="true"></span></a></li>
+                    <li><a href="https://github.com/toss/granite/pull/210" target="_blank" class="inline-github-link"><b>@granite-js/plugin-rozenite
+                                신규 패키지 개발 <span class="icon github-icon" aria-hidden="true"></span></b></a>: Rozenite
+                        middleware를 Granite 플러그인으로 연결하는 패키지 구조, 빌드 설정, 타입, 공개 API 구성 및 <a
+                            href="https://github.com/toss/granite/pull/265" target="_blank"
+                            class="inline-github-link">auto-discovery 복구 <span class="icon github-icon"
+                                aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3><a href="https://github.com/Hacker0x01/react-datepicker/pull/5406" target="_blank"
+                        class="title-link">React Datepicker 타입 정의 개선 <span class="icon github-icon"
+                            aria-hidden="true"></span></a></h3>
+                <ul>
+                    <li>TypeScript 4.8 업그레이드로 인한 타입 호환성: <a href="https://velog.io/@jingjing2222/%EC%98%A4%ED%94%88-%EC%86%8C%EC%8A%A4-%EC%89%AC%EC%9B%8C%EC%9A%94-%ED%95%9C%EB%B2%88-%EB%A7%9B%EB%B4%90%EC%9A%94"
+                            target="_blank" class="blog-link"><b>Partial 타입</b>을 활용하여 props 불일치 해결 <span
+                                class="icon blog-icon inline-icon" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3><a href="https://github.com/gronxb/hot-updater" target="_blank"
+                        class="title-link">hot-updater
+                        <span class="icon github-icon" aria-hidden="true"></span></a></h3>
+                <ul>
+                    <li><a href="https://github.com/gronxb/hot-updater/pull/212" target="_blank"
+                            class="inline-github-link"><b>Firebase 플러그인 개발 <span class="icon github-icon"
+                                    aria-hidden="true"></span></b></a></li>
                     <li>번들링 이후 코드 변환 안정성: <a href="https://velog.io/@jingjing2222/AST" target="_blank"
                             class="blog-link"><b>AST 기반 코드 변환</b>으로 번들링 이후에도 사이드 이펙트 없는 안정적 변환 달성 <span
-                                class="icon blog-icon" role="img" aria-label="블로그 아이콘"
-                                style="margin-left: 5px;"></span></a></li>
+                                class="icon blog-icon inline-icon" aria-hidden="true"></span></a></li>
                     <li>보안 취약한 파일 접근 제어: <a
                             href="https://velog.io/@jingjing2222/JWT%EC%99%80-%EA%B3%B5%EC%83%9D%ED%95%98%EB%8A%94-%EB%98%90-%EB%8B%A4%EB%A5%B8-%EB%B0%A9%EB%B2%95"
                             target="_blank" class="blog-link"><b>JWT 서명된 URL</b>로 파일 접근 제어하여 보안성 강화 <span
-                                class="icon blog-icon" role="img" aria-label="블로그 아이콘"
-                                style="margin-left: 5px;"></span></a></li>
+                                class="icon blog-icon inline-icon" aria-hidden="true"></span></a></li>
                     <li>18만줄 JavaScript 번들링 성능 개선: <a
                             href="https://velog.io/@jingjing2222/18%EB%A7%8C%EC%A4%84-js%ED%8C%8C%EC%9D%BC-%EB%B0%B0%ED%8F%AC%ED%95%98%EA%B8%B0"
                             target="_blank" class="blog-link"><b>tsup 번들러</b>로 번들링 최적화 및 Zero Install 구현 <span
-                                class="icon blog-icon" role="img" aria-label="블로그 아이콘"
-                                style="margin-left: 5px;"></span></a></li>
+                                class="icon blog-icon inline-icon" aria-hidden="true"></span></a></li>
+                    <li><a href="https://github.com/gronxb/hot-updater/pull/388" target="_blank"
+                            class="inline-github-link"><b>bundle 삭제 기능 개발 <span class="icon github-icon"
+                                    aria-hidden="true"></span></b></a></li>
+                    <li>Supabase, AWS 등 7개 DB와 스토리지의 다른 삭제 로직을 <b>통합 인터페이스로 추상화</b>하고 각 플러그인별 구현체 개발</li>
                 </ul>
             </div>
 
             <div class="experience-item">
-                <h3><a href="https://github.com/gronxb/hot-updater/pull/388" target="_blank"
-                        class="title-link">hot-updater bundle 삭제 기능 개발
-                        <span class="icon github-icon" role="img" aria-label="GitHub 아이콘"></span></a></h3>
+                <h3><a href="https://github.com/software-mansion/react-native-reanimated/pull/8964" target="_blank"
+                        class="title-link">React Native Reanimated native memory leak 수정
+                        <span class="icon github-icon" aria-hidden="true"></span></a></h3>
                 <ul>
-                    <li>Supabase, AWS 등 7개 DB와 스토리지의 다른 삭제 로직을 <b>통합 인터페이스로 추상화</b>하고 각 플러그인별 구현체 개발</li>
+                    <li>SingleInstanceChecker에서 <b>__cxa_demangle allocation 해제 누락</b>을 수정하여 native memory leak 방지</li>
                 </ul>
             </div>
 
@@ -229,41 +262,72 @@
 
             <div class="experience-item">
                 <h3><a href="https://yozm.wishket.com/magazine/detail/3076/" target="_blank" class="title-link">AI 도구의
-                        한계를 분석, 개발자의 본질적 역할과 가치에 대한 아티클<span class="link-icon"></span></a></h3>
+                        한계를 분석, 개발자의 본질적 역할과 가치에 대한 아티클<span class="link-icon" aria-hidden="true"></span></a></h3>
                 <ul>
                     <li>기술 철학 전파: <b>위시켓 요즘IT</b> 매거진 게재로 <u>10만+ 개발자</u>에게 기술 철학과 비판적 사고 전파</li>
                 </ul>
             </div>
         </section>
 
+        <section class="projects">
+            <h2>Project</h2>
+
+            <div class="project-item">
+                <h3>교보DTS 컴플라이언스 플랫폼 개발 (React, TypeScript)</h3>
+                <div class="project-period">2025.03 ~ 2025.05 (3개월) | 프론트엔드 리드 (11명 중 3명 FE팀)</div>
+                <ul>
+                    <li>느린 CI/CD 속도: 기존 4분 40초에 달하던 빌드 시간을 Docker 멀티 아키텍처 최적화로 45초로 단축하여 <u>1100% 개선</u></li>
+                    <li>까다로운 의존성 관리: Private Network에서 외부 의존성을 설치할 수 없는 문제를 <b>Yarn Berry Zero Install</b>로
+                        해결하여 보안, 빌드 환경 개선</li>
+                    <li>반복적인 API 타입 정의: 수작업으로 관리되던 백엔드 통신 함수를 <b>Orval(OpenAPI Generator)</b>로 자동화하여 관련 작업을
+                        <u>60% 감소</u>시키고 휴먼 에러 방지
+                    </li>
+                    <li>수동적인 On-premise 배포: <b>GitLab Runner와 SCP/SSH</b>로 On-premise 서버 자동 배포 파이프라인을 구축</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>포캣냥 - 위치 기반 대학가 길고양이 커뮤니티 (React Native, TypeScript)</h3>
+                <div class="project-period">2025.03 ~ 2025.05. | 4명 팀 프로젝트에서 프론트엔드 담당, 출시 완료</div>
+                <ul>
+                    <li>소셜 로그인 통합 이슈: 카카오, 구글, 애플 각각 다른 SDK와 인증 플로우로 코드 중복 발생하여 <b>어댑터 패턴</b> 적용, 통합 인터페이스 구현으로 새 플랫폼 추가
+                        시 기존 코드 수정 없이 확장 가능</li>
+                    <li>앱스토어 심사 지연 리스크: 긴급 버그 수정 시 2-7일 심사 기간으로 서비스 중단 위험이 있어 <b>Code-push(hot-updater)</b> 시스템 도입, 실시간
+                        무중단 업데이트 배포 가능</li>
+                </ul>
+
+            </div>
+        </section>
+
         <section class="app">
             <h2>Toy Project</h2>
             <div class="app-item">
-                <ul>
+                <ul class="compact-list link-list">
                     <li><a href="https://rebiewook.site/" target="_blank" class="title-link">독후감 플랫폼 Rebiewook (React,
-                            TypeScript) <span class="icon link-icon" role="img" aria-label="외부 링크 아이콘"></span></a> <a
+                            TypeScript) <span class="link-icon" aria-hidden="true"></span></a> <a
                             href="https://github.com/jingjing2222/Rebiewook" target="_blank"
-                            class="title-link">GitHub<span class="icon github-icon" role="img"
-                                aria-label="GitHub 아이콘"></span></a></li>
+                            class="title-link">GitHub<span class="icon github-icon" aria-hidden="true"></span></a></li>
                     <li><a href="https://marketplace.visualstudio.com/items?itemName=jingjing2222.jj-stretch"
                             target="_blank" class="title-link">jj-stretch: 스트레칭 타이머 vs code Extension
-                            <span class="icon link-icon" role="img" aria-label="외부 링크 아이콘"></span></a> <a
+                            <span class="link-icon" aria-hidden="true"></span></a> <a
                             href="https://github.com/jingjing2222/jj-stretch" target="_blank"
-                            class="title-link">GitHub<span class="icon github-icon" role="img"
-                                aria-label="GitHub 아이콘"></span></a></li>
+                            class="title-link">GitHub<span class="icon github-icon" aria-hidden="true"></span></a></li>
                 </ul>
+            </div>
         </section>
 
         <section class="education">
             <h2>ETC</h2>
             <div class="education-item">
-                <h3>📚 ASAC 웹 풀스택과정 7기 부트캠프 (2024.12.~ 2025.05.)</h3>
-                <h3>🤵‍♂️ 천안예술의전당 헤드어셔 (2024.06.~ 2025.06.)</h3>
-                <h3>🪴 한국기술교육대학교 생활관 가드닝 단체 회장 (2023.03.~ 2023.12.)</h3>
-                <h3> <a href="https://kookbang.dema.mil.kr/newsWeb/20210422/12/ATCE_CTGR_0010010000/view.do"
-                        target="_blank" class="title-link">❤️ 조혈모세포 기증 (2021.03.)<span class="link-icon"></span></a>
-                </h3>
-                <h3>📖 한국기술교육대학교 컴퓨터공학부 졸업 (18.03 ~ 25.08)</h3>
+                <ul class="compact-list">
+                    <li>📚 ASAC 웹 풀스택과정 7기 부트캠프 (2024.12.~ 2025.05.)</li>
+                    <li>🤵‍♂️ 천안예술의전당 헤드어셔 (2024.06.~ 2025.06.)</li>
+                    <li>🪴 한국기술교육대학교 생활관 가드닝 단체 회장 (2023.03.~ 2023.12.)</li>
+                    <li><a href="https://kookbang.dema.mil.kr/newsWeb/20210422/12/ATCE_CTGR_0010010000/view.do"
+                            target="_blank" class="title-link">❤️ 조혈모세포 기증 (2021.03.)<span class="link-icon"
+                                aria-hidden="true"></span></a></li>
+                    <li>📖 한국기술교육대학교 컴퓨터공학부 졸업 (18.03 ~ 25.08)</li>
+                </ul>
             </div>
         </section>
 
@@ -274,13 +338,20 @@
                 </div>
                 <div class="footer-links">
                     <a href="https://github.com/jingjing2222" target="_blank" class="footer-link">
-                        <span class="icon github-icon" role="img" aria-label="GitHub 아이콘"></span> GitHub
+                        <span class="icon github-icon" aria-hidden="true"></span> GitHub
                     </a>
                     <a href="https://velog.io/@jingjing2222/posts" target="_blank" class="footer-link">
-                        <span class="icon blog-icon" role="img" aria-label="블로그 아이콘"></span> Velog
+                        <span class="icon blog-icon" aria-hidden="true"></span> Velog
+                    </a>
+                    <a href="https://brunch.co.kr/@jay2" target="_blank" class="footer-link">
+                        <span class="icon essay-icon" aria-hidden="true"></span> Essays
+                    </a>
+                    <a href="https://www.linkedin.com/in/%ED%98%95%EC%A0%95-%EA%B9%80-28005a360/" target="_blank"
+                        class="footer-link">
+                        <span class="icon linkedin-icon" aria-hidden="true"></span> LinkedIn
                     </a>
                     <a href="mailto:gudwjd1208@koreatech.ac.kr" class="footer-link">
-                        <span class="icon email-icon" role="img" aria-label="이메일 아이콘"></span> Email
+                        <span class="icon email-icon" aria-hidden="true"></span> Email
                     </a>
                 </div>
             </div>
