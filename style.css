@@ -137,6 +137,13 @@ a:hover {
   vertical-align: -0.12em;
 }
 
+.doc-link .github-icon {
+  width: 13px;
+  height: 13px;
+  margin: 0 0 0 4px;
+  vertical-align: -0.12em;
+}
+
 .inline-github-link:hover {
   background-color: #666;
   color: #fff;
@@ -353,7 +360,7 @@ section code {
   font-size: 0.85rem;
 }
 
-.link-list a + a {
+.link-list .title-link + .title-link {
   margin-left: 0.75rem;
 }
 
@@ -437,7 +444,7 @@ section code {
     gap: 0.45rem 0.9rem;
   }
 
-  .link-list a + a {
+  .link-list .title-link + .title-link {
     margin-left: 0.6rem;
   }
 }
