@@ -150,6 +150,15 @@ a:hover {
   color: #fff;
 }
 
+.semibold {
+  font-weight: 600;
+  color: #555;
+}
+
+a:hover .semibold {
+  color: #fff;
+}
+
 .link-icon {
   display: inline-block;
   width: 12px;

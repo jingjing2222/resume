@@ -116,9 +116,9 @@
                 <h3>Viva Republica (Toss) - React Native Framework Team</h3>
                 <div class="project-period">2025.09.23 ~ 현재 | Frontend Platform Engineer</div>
                 <ul>
-                    <li>React Native 기반 토스 서비스의 개발 속도와 안정성을 높이기 위해 사내 Framework API 설계·구현과 버전 품질 관리를 담당하고 있습니다.</li>
-                    <li>토스 쇼핑의 LCP 개선을 위해 React Native 렌더링, 이미지 로딩, 네비게이션 초기화 경로를 분석하고 서비스·Framework 레벨 최적화를 진행하고 있습니다.</li>
-                    <li>Granite와 기존 앱을 연결하는 구조를 고도화하며 테스트, 빌드·배포, 개발자 경험 문제를 Framework 레벨에서 표준화하고 있습니다.</li>
+                    <li>React Native 기반 토스 서비스의 개발 속도와 안정성을 높이기 위해 <span class="semibold">사내 Framework API 설계·구현</span>과 <span class="semibold">버전 품질 관리</span>를 담당하고 있습니다.</li>
+                    <li><span class="semibold">토스 쇼핑의 LCP 개선</span>을 위해 React Native 렌더링, 이미지 로딩, 네비게이션 초기화 경로를 분석하고 서비스·Framework 레벨 최적화를 진행하고 있습니다.</li>
+                    <li><span class="semibold">Granite와 기존 앱을 연결하는 구조</span>를 고도화하며 테스트, 빌드·배포, 개발자 경험 문제를 Framework 레벨에서 표준화하고 있습니다.</li>
                 </ul>
             </div>
 
@@ -126,9 +126,9 @@
                 <h3>Viva Republica (Toss) - React Native Framework Team</h3>
                 <div class="project-period">2025.07.01 ~ 2025.09.22 | Frontend Platform Assistant</div>
                 <ul>
-                    <li>RN 0.72.6 환경에 React 내부 패키지를 번들링하고 필요한 polyfill을 Framework에 주입해, 기본 제공되지 않던 React DevTools 디버깅 도구를 사용할 수 있도록 만들었습니다.</li>
-                    <li>instance cache 전역 접근과 Fragment AST 순회 기반 code editor line metadata를 구현해 Radon IDE에서 레거시 RN 렌더링 정보를 추적할 수 있도록 만들었습니다.</li>
-                    <li>웹뷰 기반 사내 복지 앱을 React Native로 전환하기 위해 사내 Framework 기반 앱 구조를 정의하고 POC를 개발했습니다.</li>
+                    <li>RN 0.72.6 환경에 <span class="semibold">React 내부 패키지를 번들링</span>하고 필요한 <span class="semibold">polyfill을 Framework에 주입</span>해, 기본 제공되지 않던 React DevTools 디버깅 도구를 사용할 수 있도록 만들었습니다.</li>
+                    <li><span class="semibold">instance cache 전역 접근</span>과 <span class="semibold">Fragment AST 순회 기반 code editor line metadata</span>를 구현해 Radon IDE에서 레거시 RN 렌더링 정보를 추적할 수 있도록 만들었습니다.</li>
+                    <li>웹뷰 기반 사내 복지 앱의 React Native 전환을 <span class="semibold">계획부터 실행까지 담당</span>하고, LCP를 <span class="semibold">iOS 3.7s → 1.1s, Android 7.49s → 2.2s</span>로 각각 70%, 71% 감소시켰습니다.</li>
                 </ul>
             </div>
         </section>
@@ -141,13 +141,14 @@
                         class="title-link">@facebook/react-native
                         <span class="icon github-icon" aria-hidden="true"></span></a></h3>
                 <ul>
-                    <li>Android Fabric / Native Animated 경로에서 flickering과 crash를 유발하던 stale mount props 문제를 재현하고, <a
+                    <li>Android Fabric / Native Animated flickering을 재현하고 stale Fabric mount props가 direct manipulation props를 덮는 원인을 추적해, <a
                             href="https://github.com/facebook/react-native/pull/56652" target="_blank"
                             class="inline-github-link"><code>overrideBySynchronousMountPropsAtMountingAndroid</code> 기본값 변경 <span class="icon github-icon"
-                                aria-hidden="true"></span></a>과 <a
+                                aria-hidden="true"></span></a>으로 <span class="semibold">synchronous mount props override가 기본 동작이 되도록</span> upstream에 반영했습니다.</li>
+                    <li>Android Fabric crash를 재현하고 <span class="semibold">regular Fabric <code>null</code> props와 synchronous <code>transform</code>/<code>opacity</code> override가 충돌하는 경로를 수정해</span>, <a
                             href="https://github.com/facebook/react-native/pull/56913" target="_blank"
                             class="inline-github-link"><code>null</code> props 처리 수정 <span class="icon github-icon"
-                                aria-hidden="true"></span></a>을 React Native upstream에 반영했습니다.</li>
+                                aria-hidden="true"></span></a>과 regression test를 React Native upstream에 반영했습니다.</li>
                     <li><a href="https://github.com/facebook/react-native/pull/56390" target="_blank"
                             class="inline-github-link">React Native v0.85 changelog의 <code>StyleSheet.absoluteFillObject</code> 제거 항목을 정정했습니다.
                             <span class="icon github-icon" aria-hidden="true"></span></a></li>
@@ -160,9 +161,9 @@
                         <span class="icon github-icon" aria-hidden="true"></span></a></h3>
                 <ul>
                     <li><a href="https://github.com/toss/granite/pull/275" target="_blank"
-                            class="inline-github-link">React Native Testing Library를 Vitest 환경에서 사용할 수 있도록 <code>@granite-js/vitest</code> 신규 패키지를 설계·구현했습니다.
+                            class="inline-github-link"><span class="semibold">React Native Testing Library를 Vitest 환경</span>에서 사용할 수 있도록 <code>@granite-js/vitest</code> 신규 패키지를 설계·구현했습니다.
                             <span class="icon github-icon" aria-hidden="true"></span></a></li>
-                    <li>RN runtime bootstrap, Jest bridge, native module mock, Flow stripping, transform cache를 구성해 RN 테스트 런타임을 Jest preset 없이 실행할 수 있도록 만들었습니다.</li>
+                    <li><span class="semibold">RN runtime bootstrap, Jest bridge, native module mock, Flow stripping, transform cache</span>를 구성해 RN 테스트 런타임을 Jest preset 없이 실행할 수 있도록 만들었습니다.</li>
                     <li><code>@granite-js/vitest</code> 안정화를 위해 <a
                             href="https://github.com/toss/granite/pull/277" target="_blank"
                             class="inline-github-link">consumer RN source 기반 polyfill loading <span
@@ -181,7 +182,7 @@
                         <span class="icon github-icon" aria-hidden="true"></span></a></h3>
                 <ul>
                     <li><a href="https://react-native-nitro-geolocation.pages.dev/guide/why-nitro-module" target="_blank"
-                            class="doc-link">Star 90+의 Nitro Modules 기반 React Native geolocation 라이브러리를 개발해 iOS/Android native location API를 JSI direct callback 구조로 연결했습니다.&nbsp;<span class="link-icon" aria-hidden="true"></span></a></li>
+                            class="doc-link"><span class="semibold">Star 90+의 Nitro Modules 기반 React Native geolocation 라이브러리</span>를 개발해 iOS/Android native location API를 JSI direct callback 구조로 연결했습니다.&nbsp;<span class="link-icon" aria-hidden="true"></span></a></li>
                     <li><a href="https://react-native-nitro-geolocation.pages.dev/guide/modern-api" target="_blank"
                             class="doc-link">Modern API&nbsp;<span class="link-icon" aria-hidden="true"></span></a>, <a
                             href="https://react-native-nitro-geolocation.pages.dev/guide/compat-api" target="_blank"
@@ -191,7 +192,7 @@
                             class="doc-link">Background Location API&nbsp;<span class="link-icon"
                                 aria-hidden="true"></span></a>를 제공해 기존 <code>@react-native-community/geolocation</code> 사용 앱도 점진적으로 마이그레이션할 수 있도록 설계했습니다.</li>
                     <li><a href="https://react-native-nitro-geolocation.pages.dev/guide/devtools" target="_blank"
-                            class="doc-link">Rozenite DevTools plugin을 함께 개발해 interactive map, preset, keyboard/manual input 기반 위치 mocking을 지원했습니다.&nbsp;<span class="link-icon" aria-hidden="true"></span></a></li>
+                            class="doc-link"><span class="semibold">Rozenite DevTools plugin</span>을 함께 개발해 interactive map, preset, keyboard/manual input 기반 위치 mocking을 지원했습니다.&nbsp;<span class="link-icon" aria-hidden="true"></span></a></li>
                 </ul>
             </div>
 
@@ -201,7 +202,7 @@
                         <span class="icon github-icon" aria-hidden="true"></span></a></h3>
                 <ul>
                     <li><a href="https://github.com/software-mansion/react-native-reanimated/pull/8964" target="_blank"
-                            class="inline-github-link">Reanimated / Worklets의 <code>SingleInstanceChecker</code>에서 <code>__cxa_demangle</code> allocation 해제 누락을 수정해 debug build의 deterministic native memory leak을 방지했습니다.
+                            class="inline-github-link"><span class="semibold">Reanimated / Worklets</span>의 <code>SingleInstanceChecker</code>에서 <code>__cxa_demangle</code> allocation 해제 누락을 수정해 debug build의 deterministic native memory leak을 방지했습니다.
                             <span class="icon github-icon" aria-hidden="true"></span></a></li>
                 </ul>
             </div>
@@ -212,10 +213,10 @@
                         <span class="icon github-icon" aria-hidden="true"></span></a></h3>
                 <ul>
                     <li><a href="https://github.com/gronxb/hot-updater/pull/212" target="_blank"
-                            class="inline-github-link">React Native OTA update 도구 <code>hot-updater</code>에 Firebase provider/plugin을 기여했습니다.
+                            class="inline-github-link">React Native OTA update 도구 <code>hot-updater</code>에 <span class="semibold">Firebase provider/plugin</span>을 기여했습니다.
                             <span class="icon github-icon" aria-hidden="true"></span></a></li>
                     <li><a href="https://github.com/gronxb/hot-updater/pull/388" target="_blank"
-                            class="inline-github-link">bundle 삭제 기능을 개발하고 Firebase, AWS, Cloudflare, Supabase 등 storage/database별 삭제 로직을 공통 인터페이스로 추상화했습니다.
+                            class="inline-github-link"><span class="semibold">bundle 삭제 기능</span>을 개발하고 Firebase, AWS, Cloudflare, Supabase 등 storage/database별 삭제 로직을 공통 인터페이스로 추상화했습니다.
                             <span class="icon github-icon" aria-hidden="true"></span></a></li>
                 </ul>
             </div>
@@ -241,10 +242,10 @@
                         <span class="icon github-icon" aria-hidden="true"></span></a></h3>
                 <ul>
                     <li><a href="https://github.com/jingjing2222/create-rn-miniapp#%EC%83%9D%EC%84%B1%ED%95%98%EB%A9%B4-%EB%B0%94%EB%A1%9C-%EC%A4%80%EB%B9%84%EB%8F%BC%EC%9A%94" target="_blank"
-                            class="doc-link">AppInToss MiniApp을 Granite frontend, server provider, backoffice까지 함께 생성하는 CLI를 개발했습니다.&nbsp;<span
+                            class="doc-link"><span class="semibold">AppInToss MiniApp</span>을 Granite frontend, server provider, backoffice까지 함께 생성하는 CLI를 개발했습니다.&nbsp;<span
                                 class="link-icon" aria-hidden="true"></span></a></li>
                     <li><a href="https://github.com/jingjing2222/create-rn-miniapp#%EC%83%9D%EC%84%B1%ED%95%98%EB%A9%B4-%EB%B0%94%EB%A1%9C-%EC%A4%80%EB%B9%84%EB%8F%BC%EC%9A%94" target="_blank"
-                            class="doc-link">env/docs, workspace verify, agent skill onboarding을 함께 구성해 생성 직후 개발·검증 흐름을 표준화했습니다.&nbsp;<span
+                            class="doc-link"><span class="semibold">env/docs, workspace verify, agent skill onboarding</span>을 함께 구성해 생성 직후 개발·검증 흐름을 표준화했습니다.&nbsp;<span
                                 class="link-icon" aria-hidden="true"></span></a></li>
                 </ul>
             </div>
@@ -258,8 +259,8 @@
                 <div class="project-period">2025.03 ~ 2025.05 | React, TypeScript | 프론트엔드 리드</div>
                 <p>금융/기업 환경의 컴플라이언스 업무를 지원하는 웹 플랫폼의 프론트엔드 구조 설계와 배포 자동화를 담당했습니다.</p>
                 <ul>
-                    <li>Docker 멀티 아키텍처 최적화로 CI/CD 빌드 시간을 4분 40초에서 45초로 84% 단축했습니다.</li>
-                    <li>GitLab Runner와 SCP/SSH를 활용해 On-premise 서버 자동 배포 파이프라인을 구축했습니다.</li>
+                    <li>Docker 멀티 아키텍처 최적화로 CI/CD 빌드 시간을 4분 40초에서 45초로 <span class="semibold">84% 단축</span>했습니다.</li>
+                    <li><span class="semibold">GitLab Runner와 SCP/SSH</span>를 활용해 On-premise 서버 자동 배포 파이프라인을 구축했습니다.</li>
                 </ul>
             </div>
 
@@ -267,7 +268,7 @@
                 <h3>포캣냥</h3>
                 <div class="project-period">2025.03 ~ 2025.05 | React Native, TypeScript | 프론트엔드 담당</div>
                 <ul>
-                    <li>위치 기반 React Native 앱을 출시하고, CodePush/hot-updater 기반 무중단 업데이트 배포 구조를 도입했습니다.</li>
+                    <li><span class="semibold">위치 기반 React Native 앱</span>을 출시하고, <span class="semibold">hot-updater 기반 무중단 업데이트 배포 구조</span>를 도입했습니다.</li>
                 </ul>
 
             </div>
@@ -279,7 +280,7 @@
             <div class="experience-item">
                 <h3><a href="https://yozm.wishket.com/magazine/detail/3076/" target="_blank" class="title-link">다시는 챗GPT를 사용하지 않겠다<span class="link-icon" aria-hidden="true"></span></a></h3>
                 <ul>
-                    <li>요즘IT에 LLM 시대 개발자의 학습 방식과 사고 과정에 대한 글을 기고했고, 조회수 10만+를 기록했습니다.</li>
+                    <li>요즘IT에 LLM 시대 개발자의 학습 방식과 사고 과정에 대한 글을 기고했고, <span class="semibold">조회수 10만+</span>를 기록했습니다.</li>
                 </ul>
             </div>
         </section>
