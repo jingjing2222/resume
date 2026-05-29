@@ -383,7 +383,7 @@ section code {
 
 /* Experience Styles */
 .experience-item h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.125rem;
 }
 
 .experience-item ul li {
@@ -394,6 +394,11 @@ section code {
 /* Project Styles */
 .project-item h3 {
   font-size: 1rem;
+  margin-bottom: 0.125rem;
+}
+
+.app-item h3 {
+  margin-bottom: 0.125rem;
 }
 
 .project-item p {
