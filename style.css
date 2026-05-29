@@ -177,11 +177,44 @@ header {
   margin-bottom: 1rem;
 }
 
+.header-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0.5rem 0;
+}
+
 .title {
   font-size: 1.6rem;
   font-weight: 600;
-  margin: 0.5rem 0;
+  margin: 0;
   color: #444;
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex: 0 0 auto;
+  color: #999;
+  font-size: 0.78rem;
+  letter-spacing: 0;
+}
+
+.lang-link {
+  color: #888;
+  font-weight: 500;
+}
+
+.lang-link[aria-current="page"] {
+  color: #444;
+  font-weight: 600;
+}
+
+.lang-separator {
+  color: #bbb;
 }
 
 .title-desc {
@@ -419,6 +452,10 @@ section code {
     font-size: 0.9rem;
   }
 
+  .lang-switch {
+    display: none;
+  }
+
   main > section + section {
     margin-top: 0.75rem;
   }
@@ -460,6 +497,10 @@ section code {
 
   .title {
     font-size: 1.5rem;
+  }
+
+  .header-title-row {
+    gap: 0.35rem 0.9rem;
   }
 
   .social-links {
