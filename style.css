@@ -319,6 +319,35 @@ main > section + section {
   margin-top: 1rem;
 }
 
+.open-source {
+  display: flex;
+  flex-direction: column;
+}
+
+.open-source > .experience-item {
+  order: 6;
+}
+
+.open-source > .open-source-react-native {
+  order: 1;
+}
+
+.open-source > .open-source-nitro-geolocation {
+  order: 2;
+}
+
+.open-source > .open-source-granite {
+  order: 3;
+}
+
+.open-source > .open-source-hot-updater {
+  order: 4;
+}
+
+.open-source > .open-source-reanimated {
+  order: 5;
+}
+
 h2 {
   font-size: 1.2rem;
   font-weight: 700;
