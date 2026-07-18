@@ -125,17 +125,23 @@ a:hover {
   color: #fff;
 }
 
-.inline-github-link {
-  color: #555;
-  display: inline;
-  overflow-wrap: anywhere;
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  vertical-align: -0.12em;
 }
 
-.inline-github-link .icon {
+.github-link .icon {
   width: 13px;
   height: 13px;
-  margin: 0 0 0 4px;
-  vertical-align: -0.12em;
+  margin: 0;
+}
+
+h3 .github-link .icon {
+  width: 16px;
+  height: 16px;
 }
 
 .doc-link .github-icon {
@@ -145,7 +151,7 @@ a:hover {
   vertical-align: -0.12em;
 }
 
-.inline-github-link:hover {
+.github-link:hover {
   background-color: #666;
   color: #fff;
 }
