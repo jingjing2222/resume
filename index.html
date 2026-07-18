@@ -157,19 +157,19 @@
             <h2>Open Sources</h2>
 
             <div class="experience-item">
-                <h3>@react/react-native <a href="https://github.com/react/react-native" target="_blank"
+                <h3>@react/react-native<a href="https://github.com/react/react-native" target="_blank"
                         class="github-link" aria-label="@react/react-native GitHub 저장소"><span
                             class="icon github-icon" aria-hidden="true"></span></a></h3>
                 <ul>
-                    <li>Android Fabric / Native Animated flickering을 재현하고 stale Fabric mount props가 direct manipulation props를 덮는 원인을 추적해, <code>overrideBySynchronousMountPropsAtMountingAndroid</code> 기본값 변경으로 <span class="semibold">synchronous mount props override가 기본 동작이 되도록</span> upstream에 반영했습니다. <a
+                    <li>Android Fabric / Native Animated flickering을 재현하고 stale Fabric mount props가 direct manipulation props를 덮는 원인을 추적해, <code>overrideBySynchronousMountPropsAtMountingAndroid</code> 기본값 변경으로 <span class="semibold">synchronous mount props override가 기본 동작이 되도록</span> upstream에 반영했습니다.<a
                             href="https://github.com/react/react-native/pull/56652" target="_blank"
                             class="github-link" aria-label="React Native PR 56652"><span class="icon github-icon"
                                 aria-hidden="true"></span></a></li>
-                    <li>Android Fabric crash를 재현하고 <span class="semibold">regular Fabric <code>null</code> props와 synchronous <code>transform</code>/<code>opacity</code> override가 충돌하는 경로를 수정해</span>, <code>null</code> props 처리와 regression test를 React Native upstream에 반영했습니다. <a
+                    <li>Android Fabric crash를 재현하고 <span class="semibold">regular Fabric <code>null</code> props와 synchronous <code>transform</code>/<code>opacity</code> override가 충돌하는 경로를 수정해</span>, <code>null</code> props 처리와 regression test를 React Native upstream에 반영했습니다.<a
                             href="https://github.com/react/react-native/pull/56913" target="_blank"
                             class="github-link" aria-label="React Native PR 56913"><span class="icon github-icon"
                                 aria-hidden="true"></span></a></li>
-                    <li>React Native v0.85 changelog의 <code>StyleSheet.absoluteFillObject</code> 제거 항목을 정정했습니다. <a
+                    <li>React Native v0.85 changelog의 <code>StyleSheet.absoluteFillObject</code> 제거 항목을 정정했습니다.<a
                             href="https://github.com/react/react-native/pull/56390" target="_blank"
                             class="github-link" aria-label="React Native PR 56390"><span class="icon github-icon"
                                 aria-hidden="true"></span></a></li>
@@ -177,11 +177,11 @@
             </div>
 
             <div class="experience-item">
-                <h3>React Native Unistyles <a href="https://github.com/jpudysz/react-native-unistyles" target="_blank"
+                <h3>React Native Unistyles<a href="https://github.com/jpudysz/react-native-unistyles" target="_blank"
                         class="github-link" aria-label="React Native Unistyles GitHub 저장소"><span
                             class="icon github-icon" aria-hidden="true"></span></a></h3>
                 <ul>
-                    <li>native specs에 존재하지 않는 <code>StatusBar</code>와 <code>NavigationBar</code>의 root export를 제거해 <span class="semibold">public API와 native binding의 정합성</span>을 맞추고 strict ESM build 오류를 해결했습니다. <a
+                    <li>native specs에 존재하지 않는 <code>StatusBar</code>와 <code>NavigationBar</code>의 root export를 제거해 <span class="semibold">public API와 native binding의 정합성</span>을 맞추고 strict ESM build 오류를 해결했습니다.<a
                             href="https://github.com/jpudysz/react-native-unistyles/pull/1197" target="_blank"
                             class="github-link" aria-label="React Native Unistyles PR 1197"><span
                                 class="icon github-icon" aria-hidden="true"></span></a></li>
@@ -189,39 +189,27 @@
             </div>
 
             <div class="experience-item">
-                <h3>webview-bridge <a href="https://github.com/gronxb/webview-bridge" target="_blank"
-                        class="github-link" aria-label="webview-bridge GitHub 저장소"><span
-                            class="icon github-icon" aria-hidden="true"></span></a></h3>
-                <ul>
-                    <li><code>@webview-bridge/react-native</code>의 package export map에 <code>react-native</code> condition을 추가해 Metro가 generic build 대신 source entry를 해석하도록 수정하고, <span class="semibold"><code>react-native-webview</code> default export interop 오류를 해결했습니다.</span> <a
-                            href="https://github.com/gronxb/webview-bridge/pull/115" target="_blank"
-                            class="github-link" aria-label="webview-bridge PR 115"><span class="icon github-icon"
-                                aria-hidden="true"></span></a></li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <h3>@toss/granite <a href="https://github.com/toss/granite" target="_blank"
+                <h3>@toss/granite<a href="https://github.com/toss/granite" target="_blank"
                         class="github-link" aria-label="@toss/granite GitHub 저장소"><span
                             class="icon github-icon" aria-hidden="true"></span></a></h3>
                 <ul>
-                    <li><span class="semibold">React Native Testing Library를 Vitest 환경</span>에서 사용할 수 있도록 <code>@granite-js/vitest</code> 신규 패키지를 설계·구현했습니다. <a
+                    <li><span class="semibold">React Native Testing Library를 Vitest 환경</span>에서 사용할 수 있도록 <code>@granite-js/vitest</code> 신규 패키지를 설계·구현했습니다.<a
                             href="https://github.com/toss/granite/pull/275" target="_blank"
                             class="github-link" aria-label="Granite PR 275"><span class="icon github-icon"
                                 aria-hidden="true"></span></a></li>
                     <li><span class="semibold">RN runtime bootstrap, Jest bridge, native module mock, Flow stripping, transform cache</span>를 구성해 RN 테스트 런타임을 Jest preset 없이 실행할 수 있도록 만들었습니다.</li>
-                    <li><code>@granite-js/vitest</code> 안정화를 위해 consumer RN source 기반 polyfill loading <a
+                    <li><code>@granite-js/vitest</code> 안정화를 위해 consumer RN source 기반 polyfill loading<a
                             href="https://github.com/toss/granite/pull/277" target="_blank" class="github-link"
-                            aria-label="Granite PR 277"><span class="icon github-icon" aria-hidden="true"></span></a>, Ubuntu 20 호환 Flow stripping <a
+                            aria-label="Granite PR 277"><span class="icon github-icon" aria-hidden="true"></span></a>, Ubuntu 20 호환 Flow stripping<a
                             href="https://github.com/toss/granite/pull/278" target="_blank" class="github-link"
-                            aria-label="Granite PR 278"><span class="icon github-icon" aria-hidden="true"></span></a>, flat transform cache + manifest resolver 구조 <a
+                            aria-label="Granite PR 278"><span class="icon github-icon" aria-hidden="true"></span></a>, flat transform cache + manifest resolver 구조<a
                             href="https://github.com/toss/granite/pull/284" target="_blank" class="github-link"
                             aria-label="Granite PR 284"><span class="icon github-icon" aria-hidden="true"></span></a>를 도입했습니다.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
-                <h3>react-native-nitro-geolocation <a href="https://github.com/jingjing2222/react-native-nitro-geolocation"
+                <h3>react-native-nitro-geolocation<a href="https://github.com/jingjing2222/react-native-nitro-geolocation"
                         target="_blank" class="github-link" aria-label="react-native-nitro-geolocation GitHub 저장소"><span
                             class="icon github-icon" aria-hidden="true"></span></a></h3>
                 <ul>
@@ -241,11 +229,11 @@
             </div>
 
             <div class="experience-item">
-                <h3>React Native Reanimated <a href="https://github.com/software-mansion/react-native-reanimated"
+                <h3>React Native Reanimated<a href="https://github.com/software-mansion/react-native-reanimated"
                         target="_blank" class="github-link" aria-label="React Native Reanimated GitHub 저장소"><span
                             class="icon github-icon" aria-hidden="true"></span></a></h3>
                 <ul>
-                    <li><span class="semibold">Reanimated / Worklets</span>의 <code>SingleInstanceChecker</code>에서 <code>__cxa_demangle</code> allocation 해제 누락을 수정해 debug build의 deterministic native memory leak을 방지했습니다. <a
+                    <li><span class="semibold">Reanimated / Worklets</span>의 <code>SingleInstanceChecker</code>에서 <code>__cxa_demangle</code> allocation 해제 누락을 수정해 debug build의 deterministic native memory leak을 방지했습니다.<a
                             href="https://github.com/software-mansion/react-native-reanimated/pull/8964" target="_blank"
                             class="github-link" aria-label="React Native Reanimated PR 8964"><span
                                 class="icon github-icon" aria-hidden="true"></span></a></li>
@@ -253,15 +241,15 @@
             </div>
 
             <div class="experience-item">
-                <h3>hot-updater <a href="https://github.com/gronxb/hot-updater" target="_blank"
+                <h3>hot-updater<a href="https://github.com/gronxb/hot-updater" target="_blank"
                         class="github-link" aria-label="hot-updater GitHub 저장소"><span class="icon github-icon"
                             aria-hidden="true"></span></a></h3>
                 <ul>
-                    <li>React Native OTA update 도구 <code>hot-updater</code>에 <span class="semibold">Firebase provider/plugin</span>을 기여했습니다. <a
+                    <li>React Native OTA update 도구 <code>hot-updater</code>에 <span class="semibold">Firebase provider/plugin</span>을 기여했습니다.<a
                             href="https://github.com/gronxb/hot-updater/pull/212" target="_blank"
                             class="github-link" aria-label="hot-updater PR 212"><span class="icon github-icon"
                                 aria-hidden="true"></span></a></li>
-                    <li><span class="semibold">bundle 삭제 기능</span>을 개발하고 Firebase, AWS, Cloudflare, Supabase 등 storage/database별 삭제 로직을 공통 인터페이스로 추상화했습니다. <a
+                    <li><span class="semibold">bundle 삭제 기능</span>을 개발하고 Firebase, AWS, Cloudflare, Supabase 등 storage/database별 삭제 로직을 공통 인터페이스로 추상화했습니다.<a
                             href="https://github.com/gronxb/hot-updater/pull/388" target="_blank"
                             class="github-link" aria-label="hot-updater PR 388"><span class="icon github-icon"
                                 aria-hidden="true"></span></a></li>
@@ -269,11 +257,23 @@
             </div>
 
             <div class="experience-item">
-                <h3>React Datepicker 타입 정의 개선 <a href="https://github.com/Hacker0x01/react-datepicker"
+                <h3>webview-bridge<a href="https://github.com/gronxb/webview-bridge" target="_blank"
+                        class="github-link" aria-label="webview-bridge GitHub 저장소"><span
+                            class="icon github-icon" aria-hidden="true"></span></a></h3>
+                <ul>
+                    <li><code>@webview-bridge/react-native</code>의 package export map에 <code>react-native</code> condition을 추가해 Metro가 generic build 대신 source entry를 해석하도록 수정하고, <span class="semibold"><code>react-native-webview</code> default export interop 오류를 해결했습니다.</span><a
+                            href="https://github.com/gronxb/webview-bridge/pull/115" target="_blank"
+                            class="github-link" aria-label="webview-bridge PR 115"><span class="icon github-icon"
+                                aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>React Datepicker 타입 정의 개선<a href="https://github.com/Hacker0x01/react-datepicker"
                         target="_blank" class="github-link" aria-label="React Datepicker GitHub 저장소"><span
                             class="icon github-icon" aria-hidden="true"></span></a></h3>
                 <ul>
-                    <li>TypeScript 4.8 업그레이드로 발생한 props 타입 호환성 문제를 <code>Partial</code> 타입을 활용해 수정했습니다. <a
+                    <li>TypeScript 4.8 업그레이드로 발생한 props 타입 호환성 문제를 <code>Partial</code> 타입을 활용해 수정했습니다.<a
                             href="https://github.com/Hacker0x01/react-datepicker/pull/5406" target="_blank"
                             class="github-link" aria-label="React Datepicker PR 5406"><span
                                 class="icon github-icon" aria-hidden="true"></span></a></li>
@@ -284,7 +284,7 @@
         <section class="app">
             <h2>Developer Tooling</h2>
             <div class="app-item">
-                <h3>create-rn-miniapp <a href="https://github.com/jingjing2222/create-rn-miniapp" target="_blank"
+                <h3>create-rn-miniapp<a href="https://github.com/jingjing2222/create-rn-miniapp" target="_blank"
                         class="github-link" aria-label="create-rn-miniapp GitHub 저장소"><span
                             class="icon github-icon" aria-hidden="true"></span></a></h3>
                 <ul>
