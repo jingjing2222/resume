@@ -117,12 +117,24 @@ a:hover {
 .doc-link {
   color: #555;
   display: inline;
-  overflow-wrap: anywhere;
+  margin-left: 0.15em;
+  border-radius: 3px;
 }
 
 .doc-link:hover {
   background-color: #666;
   color: #fff;
+}
+
+.external-reference {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.doc-link .link-icon {
+  margin: 0;
+  vertical-align: middle;
 }
 
 .github-link {
