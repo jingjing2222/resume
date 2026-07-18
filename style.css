@@ -132,6 +132,8 @@ a:hover {
 }
 
 .github-reference {
+  display: inline-flex;
+  align-items: center;
   white-space: nowrap;
 }
 
