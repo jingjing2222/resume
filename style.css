@@ -127,13 +127,12 @@ a:hover {
 
 .github-link {
   display: inline;
-  white-space: nowrap;
   margin-left: 0.15em;
   border-radius: 3px;
 }
 
-.github-link::before {
-  content: "\2060";
+.github-reference {
+  white-space: nowrap;
 }
 
 .github-link .icon {
